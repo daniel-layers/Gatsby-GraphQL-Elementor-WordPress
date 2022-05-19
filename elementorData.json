@@ -1,0 +1,71 @@
+{
+	"row.settings.background_background": {
+		"classic": {
+			"background_attachment": "scroll, fixed",
+			"background_color": "string",
+			"background_image": {
+				"background_image.alt": "string",
+				"background_image.id": "integer",
+				"background_image.source": "string",
+				"background_image.url": "string"
+			},
+			"background_position": "string",
+			"background_repeat": "string",
+			"background_size": "string"
+		},
+		"gradient": {
+			"background_color": "string (hex value of gradient 1)",
+			"background_color_b": "string (hex value of gradient 2)",
+			"background_gradient_position": "center left", //empty if center center
+			"background_gradient_type": "radial", //empty if Linear
+			"background_color_stop": {
+				//Only defined if not 0
+				"size": "integer (starting position of gradient)",
+				"unit": "%"
+			},
+			"background_color_stop_b": {
+				//Only defined if not 100
+				"size": "integer (starting position of gradient)",
+				"unit": "%"
+			},
+			"background_gradient_angle": {
+				"size": "integer (degress angle)",
+				"unit": "string (deg)"
+			}
+		},
+		"video": {
+			"background_play_on_mobile": "yes",
+			"background_play_once": "yes",
+			"background_privacy_mode": "yes",
+			"background_video_end": 2,
+			"background_video_link": "https://www.youtube.com/watch?v=XHOmBV4js_E",
+			"background_video_start": 1,
+			"background_video_fallback": {
+				"alt": "",
+				"id": 21,
+				"source": "library",
+				"url": "link to file"
+			}
+		},
+		"slideshow": {
+			"background_slideshow_background_position": "center center",
+			"background_slideshow_background_size": "auto",
+			"background_slideshow_ken_burns": "yes",
+			"background_slideshow_ken_burns_zoom_direction": "out",
+			"background_slideshow_lazyload": "yes",
+			"background_slideshow_loop": "", //empty if enabled
+			"background_slideshow_slide_duration": 4999, //empty if 5000
+			"background_slideshow_slide_transition": "slide_left", //empty if Fade
+			"background_slideshow_transition_duration": 501, //empty if 500
+			"background_slideshow_gallery": {
+				"id": 56,
+				"url": "link to file"
+			}
+		}
+	},
+	"background_hover_background": {
+		"classic": {
+			"background_hover_color": "#E37373"
+		}
+	}
+}
