@@ -1,0 +1,108 @@
+//This file contains all of the current Columndata returned from Elementor as of the time of previous commit.
+
+{
+	"column": {
+		"elType": "column",
+		"elements": "This contains the widgets",
+		"id": "1d58ce3",
+		"isInner": false,
+		"settings": {
+			/*
+			 * Layout Tab
+			 */
+
+			"_column_size": 50,
+			"_inline_size": 50,
+			"_inline_size_tablet": 50,
+			"_inline_size_mobile": 50,
+			"content_position": "top",
+			"content_position_tablet": "top",
+			"content_position_mobile": "top",
+			"align": "flex-start",
+			"align_tablet": "flex-start",
+			"align_mobile": "flex-start",
+			"space_between_widgets": 20,
+			"space_between_widgets_tablet": 20,
+			"space_between_widgets_mobile": 20,
+			"html_tag": "div",
+
+			/*
+			 * Style Tab
+			 */
+
+			"": {
+				"": "",
+				"": ""
+			},
+
+			/*
+			 * Advanced Tab
+			 */
+
+			"margin": {
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value unless 0 then integer",
+				"right": "Returns: String value unless 0 then integer",
+				"top": "Returns: String value unless 0 then integer",
+				"unit": "px, em, %, rem"
+			},
+			"margin_tablet": {
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value unless 0 then integer",
+				"right": "Returns: String value unless 0 then integer",
+				"top": "Returns: String value unless 0 then integer",
+				"unit": "px, em, %, rem"
+			},
+			"margin_mobile": {
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value unless 0 then integer",
+				"right": "Returns: String value unless 0 then integer",
+				"top": "Returns: String value unless 0 then integer",
+				"unit": "px, em, %, rem"
+			},
+			"padding": {
+				//Undefined if values are completely empty
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value",
+				"right": "Returns: String value",
+				"top": "Returns: String value",
+				"unit": "px, em, %, rem"
+			},
+			"padding_tablet": {
+				//Undefined if values are completely empty
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value",
+				"right": "Returns: String value",
+				"top": "Returns: String value",
+				"unit": "px, em, %, rem"
+			},
+			"padding_mobile": {
+				//Undefined if values are completely empty
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value",
+				"right": "Returns: String value",
+				"top": "Returns: String value",
+				"unit": "px, em, %, rem"
+			},
+			"z_index": "Returns: Integer", //Undefined if not set
+			"z_index_tablet": "Returns: Integer", //Undefined if not set
+			"z_index_mobile": "Returns: Integer", //Undefined if not set
+			"_element_id": "Returns: string of extra ids", //Undefined if not set
+			"css_classes": "Returns: string of extra classes", //Undefined if not set
+			"animation": "fadeIn",
+			"animation_tablet": "fadeIn",
+			"animation_mobile": "fadeIn",
+			"animation_delay": 1, //Integer is miliseconds
+			"animation_duration": "Returns: slow, fast", //Undefined if set to Normal
+			"hide_desktop": "hidden-desktop", //Undefined if not set
+			"hide_mobile": "hidden-mobile", //Undefined if not set
+			"hide_tablet": "hidden-tablet" //Undefined if not set
+		}
+	}
+}
