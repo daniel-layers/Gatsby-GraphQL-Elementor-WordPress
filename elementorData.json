@@ -42,9 +42,33 @@
 						"background_image.source": "library",
 						"background_image.url": "string"
 					},
+					"background_image_tablet": {
+						"background_image.alt": "string",
+						"background_image.id": "integer",
+						"background_image.source": "library",
+						"background_image.url": "string"
+					},
+					"background_image_mobile": {
+						"background_image.alt": "string",
+						"background_image.id": "integer",
+						"background_image.source": "library",
+						"background_image.url": "string"
+					},
 					"background_position": "string", //Undefined if Default
+					"background_position_tablet": "string", //Undefined if Default
+					"background_position_mobile": "string", //Undefined if Default
 					"background_xpos": {
 						//Set only if background_position is Custom (initial in Query)
+						"size": -232,
+						"unit": "%, px, em, vw"
+					},
+					"background_xpos_tablet": {
+						//Set only if background_position_tablet is Custom (initial in Query)
+						"size": -232,
+						"unit": "%, px, em, vw"
+					},
+					"background_xpos_mobile": {
+						//Set only if background_position_mobile is Custom (initial in Query)
 						"size": -232,
 						"unit": "%, px, em, vw"
 					},
@@ -53,10 +77,34 @@
 						"size": 190,
 						"unit": "%, px, em, vw"
 					},
+					"background_ypos_tablet": {
+						//Set only if background_position_tablet is Custom (initial in Query)
+						"size": 190,
+						"unit": "%, px, em, vw"
+					},
+					"background_ypos_mobile": {
+						//Set only if background_position_mobile is Custom (initial in Query)
+						"size": 190,
+						"unit": "%, px, em, vw"
+					},
 					"background_repeat": "string", //Undefined if Default
+					"background_repeat_tablet": "string", //Undefined if Default
+					"background_repeat_mobile": "string", //Undefined if Default
 					"background_size": "string", //Undefined if Default
+					"background_size_tablet": "string", //Undefined if Default
+					"background_size_mobile": "string", //Undefined if Default
 					"background_bg_width": {
 						//Set only if background_size is Custom (initial in Query)
+						"size": 25,
+						"unit": "%, px, em, vw"
+					},
+					"background_bg_width_tablet": {
+						//Set only if background_size_tablet is Custom (initial in Query)
+						"size": 25,
+						"unit": "%, px, em, vw"
+					},
+					"background_bg_width_mobile": {
+						//Set only if background_size_mobile is Custom (initial in Query)
 						"size": 25,
 						"unit": "%, px, em, vw"
 					}
@@ -97,15 +145,21 @@
 					}
 				},
 				"slideshow": {
-					"background_slideshow_background_position": "center center",
-					"background_slideshow_background_size": "auto",
-					"background_slideshow_ken_burns": "yes",
-					"background_slideshow_ken_burns_zoom_direction": "out",
-					"background_slideshow_lazyload": "yes",
-					"background_slideshow_loop": "", //empty if enabled
-					"background_slideshow_slide_duration": 4999, //empty if 5000
-					"background_slideshow_slide_transition": "slide_left", //empty if Fade
-					"background_slideshow_transition_duration": 501, //empty if 500
+					"background_slideshow_background_position": "Returns valid css background positions", //Undefined if set to Default
+					"background_slideshow_background_position_tablet": "Returns valid css background positions", //Undefined if set to Default
+					"background_slideshow_background_position_mobile": "Returns valid css background positions", //Undefined if set to Default
+
+					"background_slideshow_background_size": "Returns valid css background sizes", //Undefined if set to Default
+					"background_slideshow_background_size_tablet": "Returns valid css background sizes", //Undefined if set to Default
+					"background_slideshow_background_size_mobile": "Returns valid css background sizes", //Undefined if set to Default
+
+					"background_slideshow_ken_burns": "yes", //Undefined if not set
+					"background_slideshow_ken_burns_zoom_direction": "Returns: out", //Undefined if set to In
+					"background_slideshow_lazyload": "yes", //Undefined if not set
+					"background_slideshow_loop": "", //Empty if not enabled
+					"background_slideshow_slide_duration": "Returns: Integer", //Undefined if set to 5000
+					"background_slideshow_slide_transition": "Returns: Selected option", //Undefined if set to Fade
+					"background_slideshow_transition_duration": "Returns: Integer", //Undefined if set to 500
 					"background_slideshow_gallery": {
 						"id": 56,
 						"url": "link to file"
@@ -114,7 +168,105 @@
 			},
 			"background_hover_background": {
 				"classic": {
-					"background_hover_color": "#E37373"
+					"background_hover_attachment": "Returns: scroll, fixed.", //Undefined if Default
+					"background_hover_color": "Returns: Hex value if set",
+					"background_hover_image": {
+						"background_hover_image.alt": "string",
+						"background_hover_image.id": "integer",
+						"background_hover_image.source": "library",
+						"background_hover_image.url": "string"
+					},
+					"background_hover_image_tablet": {
+						"background_hover_image.alt": "string",
+						"background_hover_image.id": "integer",
+						"background_hover_image.source": "library",
+						"background_hover_image.url": "string"
+					},
+					"background_image_hover_mobile": {
+						"background_hover_image.alt": "string",
+						"background_hover_image.id": "integer",
+						"background_hover_image.source": "library",
+						"background_hover_image.url": "string"
+					},
+					"background_hover_position": "string", //Undefined if Default
+					"background_hover_position_tablet": "string", //Undefined if Default
+					"background_hover_position_mobile": "string", //Undefined if Default
+					"background_hover_xpos": {
+						//Set only if background_hover_position is Custom (initial in Query)
+						"size": -232,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_xpos_tablet": {
+						//Set only if background_hover_position_tablet is Custom (initial in Query)
+						"size": -232,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_xpos_mobile": {
+						//Set only if background_hover_position_mobile is Custom (initial in Query)
+						"size": -232,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_ypos": {
+						//Set only if background_hover_position is Custom (initial in Query)
+						"size": 190,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_ypos_tablet": {
+						//Set only if background_hover_position_tablet is Custom (initial in Query)
+						"size": 190,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_ypos_mobile": {
+						//Set only if background_hover_position_mobile is Custom (initial in Query)
+						"size": 190,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_repeat": "string", //Undefined if Default
+					"background_hover_repeat_tablet": "string", //Undefined if Default
+					"background_hover_repeat_mobile": "string", //Undefined if Default
+					"background_hover_size": "string", //Undefined if Default
+					"background_hover_size_tablet": "string", //Undefined if Default
+					"background_hover_size_mobile": "string", //Undefined if Default
+					"background_hover_bg_width": {
+						//Set only if background_hover_size is Custom (initial in Query)
+						"size": 25,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_bg_width_tablet": {
+						//Set only if background_hover_size_tablet is Custom (initial in Query)
+						"size": 25,
+						"unit": "%, px, em, vw"
+					},
+					"background_hover_bg_width_mobile": {
+						//Set only if background_hover_size_mobile is Custom (initial in Query)
+						"size": 25,
+						"unit": "%, px, em, vw"
+					}
+				},
+				"gradient": {
+					"background_hover_color": "Returns: Hex value if set", //First Gradient Color
+					"background_hover_color_b": "Returns: Hex value if set", //Second Gradient Color
+					"background_hover_gradient_position": "Returns: Accepted css gradient positions", //Undefined if center center
+					"background_hover_color_stop": {
+						//Undefined if not set to something other than 0
+						"size": "Returns: First Color Location",
+						"unit": "%"
+					},
+					"background_hover_color_stop_b": {
+						//Undefined if not set to something other than 100
+						"size": "Returns: Second Color Location",
+						"unit": "%"
+					},
+					"background_hover_gradient_type": "Returns: radial", //Undefined if Linear
+					"background_hover_gradient_angle": {
+						//Irrelevant if Gradient Type is Radial
+						"size": "Returns: defined angle", //Empty if not set
+						"unit": "Returns: deg"
+					}
+				},
+				"background_hover_transition": {
+					"size": 0.8, //Integer in miliseconds
+					"unit": "px" //Unit is irrelevant
 				}
 			},
 
@@ -122,7 +274,7 @@
 			 * Advanced Tab
 			 */
 
-			"margin": {
+			"margin/margin_tablet/margin_mobile": {
 				"bottom": "Returns: String value",
 				"isLinked": "Returns: true, false",
 				"left": "Returns: String value unless 0 then integer",
@@ -130,7 +282,7 @@
 				"top": "Returns: String value unless 0 then integer",
 				"unit": "px, em, %, rem"
 			},
-			"padding": {
+			"padding/padding_tablet/padding_mobile": {
 				//Undefined if values are completely empty
 				"bottom": "Returns: String value",
 				"isLinked": "Returns: true, false",
@@ -141,7 +293,15 @@
 			},
 			"z_index": "Returns: Integer", //Undefined if not set
 			"_element_id": "Returns: string of extra ids", //Undefined if not set
-			"css_classes": "Returns: string of extra classes" //Undefined if not set
+			"css_classes": "Returns: string of extra classes", //Undefined if not set
+			"animation": "fadeIn", //Returns undefined if None
+			"animation_delay": 1, //Integer is miliseconds
+			"animation_duration": "Returns: slow, fast", //Undefined if set to Normal
+			"reverse_order_mobile": "reverse-mobile", //Undefined if not set
+			"reverse_order_tablet": "reverse-tablet", //Undefined if not set
+			"hide_desktop": "hidden-desktop", //Undefined if not set
+			"hide_mobile": "hidden-mobile", //Undefined if not set
+			"hide_tablet": "hidden-tablet" //Undefined if not set
 		}
 	}
 }
