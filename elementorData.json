@@ -1,71 +1,147 @@
+//This file contains all of the current Row, Column and Widget data returned from Elementor as of the time of previous commit.
+
 {
-	"row.settings.background_background": {
-		"classic": {
-			"background_attachment": "scroll, fixed",
-			"background_color": "string",
-			"background_image": {
-				"background_image.alt": "string",
-				"background_image.id": "integer",
-				"background_image.source": "string",
-				"background_image.url": "string"
+	"row": {
+		"elType": "section",
+		"elements": "This contains the columns & widgets",
+		"id": "Returns: string ID for the row",
+		"isInner": "false",
+		"settings": {
+			/*
+			 * Layout Tab
+			 */
+
+			"layout": "full_width", //Undefined if Boxed
+			"content_width": {
+				//Irrelevant if Layout is full_width
+				"size": "Returns: Integer for the boxed size",
+				"unit": "px"
 			},
-			"background_position": "string",
-			"background_repeat": "string",
-			"background_size": "string"
-		},
-		"gradient": {
-			"background_color": "string (hex value of gradient 1)",
-			"background_color_b": "string (hex value of gradient 2)",
-			"background_gradient_position": "center left", //empty if center center
-			"background_gradient_type": "radial", //empty if Linear
-			"background_color_stop": {
-				//Only defined if not 0
-				"size": "integer (starting position of gradient)",
-				"unit": "%"
+			"gap": "Returns: no, narrow, extended, wide, wider, custom", //Undefined if Default
+			"gap_columns_custom": {
+				"size": "Returns: Integer for the gap size",
+				"unit": "px, %, vh, vw"
 			},
-			"background_color_stop_b": {
-				//Only defined if not 100
-				"size": "integer (starting position of gradient)",
-				"unit": "%"
+			"content_position": "Returns: top, middle, bottom, space-between, space-around, space-evenly", //Undefined if Default
+			"overflow": "Returns: hidden", //Undefined if Default
+			"stretch_section": "Returns: section-stretched", //Undefined if unchecked
+			"html_tag": "Returns: div, header, footer, main, article, section, aside, nav", //Undefined if Default
+			"structure": "Returns: String 20,21,22,30,31,32,33,34,40,50,60,70,80,90,100", //Undefined if 1 Column
+
+			/*
+			 * Style Tab
+			 */
+
+			"background_background": {
+				"classic": {
+					"background_attachment": "Returns: scroll, fixed.", //Undefined if Default
+					"background_color": "Returns: Hex value if set",
+					"background_image": {
+						"background_image.alt": "string",
+						"background_image.id": "integer",
+						"background_image.source": "library",
+						"background_image.url": "string"
+					},
+					"background_position": "string", //Undefined if Default
+					"background_xpos": {
+						//Set only if background_position is Custom (initial in Query)
+						"size": -232,
+						"unit": "%, px, em, vw"
+					},
+					"background_ypos": {
+						//Set only if background_position is Custom (initial in Query)
+						"size": 190,
+						"unit": "%, px, em, vw"
+					},
+					"background_repeat": "string", //Undefined if Default
+					"background_size": "string", //Undefined if Default
+					"background_bg_width": {
+						//Set only if background_size is Custom (initial in Query)
+						"size": 25,
+						"unit": "%, px, em, vw"
+					}
+				},
+				"gradient": {
+					"background_color": "Returns: Hex value if set", //First Gradient Color
+					"background_color_b": "Returns: Hex value if set", //Second Gradient Color
+					"background_gradient_position": "Returns: Accepted css gradient positions", //Undefined if center center
+					"background_color_stop": {
+						//Undefined if not set to something other than 0
+						"size": "Returns: First Color Location",
+						"unit": "%"
+					},
+					"background_color_stop_b": {
+						//Undefined if not set to something other than 100
+						"size": "Returns: Second Color Location",
+						"unit": "%"
+					},
+					"background_gradient_type": "Returns: radial", //Undefined if Linear
+					"background_gradient_angle": {
+						//Irrelevant if Gradient Type is Radial
+						"size": "Returns: defined angle", //Empty if not set
+						"unit": "Returns: deg"
+					}
+				},
+				"video": {
+					"background_play_on_mobile": "yes", //Undefined if not set to enabled
+					"background_play_once": "yes", //Undefined if not set to enabled
+					"background_privacy_mode": "yes", //Undefined if not set to enabled
+					"background_video_end": "Returns: integer", //Undefined if not set
+					"background_video_link": "Returns: string of URL", //Undefined if not set
+					"background_video_start": "Returns: integer", //Undefined if not set
+					"background_video_fallback": {
+						"alt": "Returns: Alt attribute from image", //Empty if not set
+						"id": "Returns: Integer ID of the image", //Empty if not set
+						"source": "Returns: library",
+						"url": "Returns: string of url image" //Empty if not set
+					}
+				},
+				"slideshow": {
+					"background_slideshow_background_position": "center center",
+					"background_slideshow_background_size": "auto",
+					"background_slideshow_ken_burns": "yes",
+					"background_slideshow_ken_burns_zoom_direction": "out",
+					"background_slideshow_lazyload": "yes",
+					"background_slideshow_loop": "", //empty if enabled
+					"background_slideshow_slide_duration": 4999, //empty if 5000
+					"background_slideshow_slide_transition": "slide_left", //empty if Fade
+					"background_slideshow_transition_duration": 501, //empty if 500
+					"background_slideshow_gallery": {
+						"id": 56,
+						"url": "link to file"
+					}
+				}
 			},
-			"background_gradient_angle": {
-				"size": "integer (degress angle)",
-				"unit": "string (deg)"
-			}
-		},
-		"video": {
-			"background_play_on_mobile": "yes",
-			"background_play_once": "yes",
-			"background_privacy_mode": "yes",
-			"background_video_end": 2,
-			"background_video_link": "https://www.youtube.com/watch?v=XHOmBV4js_E",
-			"background_video_start": 1,
-			"background_video_fallback": {
-				"alt": "",
-				"id": 21,
-				"source": "library",
-				"url": "link to file"
-			}
-		},
-		"slideshow": {
-			"background_slideshow_background_position": "center center",
-			"background_slideshow_background_size": "auto",
-			"background_slideshow_ken_burns": "yes",
-			"background_slideshow_ken_burns_zoom_direction": "out",
-			"background_slideshow_lazyload": "yes",
-			"background_slideshow_loop": "", //empty if enabled
-			"background_slideshow_slide_duration": 4999, //empty if 5000
-			"background_slideshow_slide_transition": "slide_left", //empty if Fade
-			"background_slideshow_transition_duration": 501, //empty if 500
-			"background_slideshow_gallery": {
-				"id": 56,
-				"url": "link to file"
-			}
-		}
-	},
-	"background_hover_background": {
-		"classic": {
-			"background_hover_color": "#E37373"
+			"background_hover_background": {
+				"classic": {
+					"background_hover_color": "#E37373"
+				}
+			},
+
+			/*
+			 * Advanced Tab
+			 */
+
+			"margin": {
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value unless 0 then integer",
+				"right": "Returns: String value unless 0 then integer",
+				"top": "Returns: String value unless 0 then integer",
+				"unit": "px, em, %, rem"
+			},
+			"padding": {
+				//Undefined if values are completely empty
+				"bottom": "Returns: String value",
+				"isLinked": "Returns: true, false",
+				"left": "Returns: String value",
+				"right": "Returns: String value",
+				"top": "Returns: String value",
+				"unit": "px, em, %, rem"
+			},
+			"z_index": "Returns: Integer", //Undefined if not set
+			"_element_id": "Returns: string of extra ids", //Undefined if not set
+			"css_classes": "Returns: string of extra classes" //Undefined if not set
 		}
 	}
 }
